@@ -19,3 +19,7 @@ button:hover {
   color: #fff;
 }
 
+img {
+  width: auto;
+  height: 200px;
+}

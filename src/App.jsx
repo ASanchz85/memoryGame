@@ -2,12 +2,12 @@ import { useState } from "react";
 import "./App.css";
 
 const cardImages = [
-  { "src": "/img/King_Chess.png" },
-  { "src": "/img/Queen_Chess.png" },
-  { "src": "/img/Rook_Chess.png" },
-  { "src": "/img/Bishop_Chess.png" },
-  { "src": "/img/Knight_Chess.png" },
-  { "src": "/img/Pawn_Chess.png" },
+  { src: "/King_Chess.png" },
+  { src: "/Queen_Chess.png" },
+  { src: "/Rook_Chess.png" },
+  { src: "/Bishop_Chess.png" },
+  { src: "/Knight_Chess.png" },
+  { src: "/Pawn_Chess.png" },
 ];
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
           <div key={card.id} className="card">
             <div>
               <img className="front" src={card.src} alt="card front" />
-              <img className="back" src="/img/cover_card.jpg" alt="card back" />
+              <img className="back" src="/cover_card.jpg" alt="card back" />
             </div>
           </div>
         ))}
