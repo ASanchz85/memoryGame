@@ -1,6 +1,8 @@
 .App {
-  max-width: 860px;
   margin: 40px auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 button {
@@ -12,6 +14,7 @@ button {
   font-size: 1em;
   cursor: pointer;
   font-weight: bold;
+  user-select: none;
 }
 
 button:hover {
@@ -19,7 +22,31 @@ button:hover {
   color: #fff;
 }
 
-img {
-  width: auto;
-  height: 200px;
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  user-select: none;
+}
+
+
+@media (min-width: 1250px) {
+  .card-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .card img {
+    width: 180px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card img {
+    width: 100px;
+    height: 125px;
+  }
 }
